@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/listFragment">
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.lot_examen2_06032019.ui.list.ListFragment"
+        android:label="Mis libros favoritos"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_bookFragment"
+            app:destination="@id/bookFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookFragment"
+        android:name="com.example.lot_examen2_06032019.ui.book.BookFragment"
+        android:label="Agregar libro"
+        tools:layout="@layout/fragment_book" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.lot_examen2_06032019.ui.setting.SettingFragment"
+        android:label="Preferencias"
+        tools:layout="@layout/fragment_setting" />
+</navigation>
